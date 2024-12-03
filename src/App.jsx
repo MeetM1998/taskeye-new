@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { Suspense } from "react";
+import { Spin } from "antd";
+import {
+  Navigate,
+  Outlet,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import { useSelector } from "react-redux";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const { isAuthenticate } = useSelector((state) => state.rootReducer.auth);
+
+  const LoginPage = React.lazy(() => import("./components/Login"));
+  const NotFoundPage = React.lazy(() => import("./components/Notfound"));
+  const MainLayout = React.lazy(() => import("./layout/MainStructure"));
+
+  const isLogin = () => {
+    return isAuthenticate
+      ? isAuthenticate
+      : localStorage.getItem("isAuthenticate") === "true";
+  };
+
+  const PrivateRoute = () => {
+    return isLogin() ? <Outlet /> : <Navigate to="/login" />;
+  };
+
+  const PublicRoute = () => {
+    return isLogin() ? <Navigate to="/" /> : <Outlet />;
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center h-screen">
+          <Spin size="large" />
+        </div>
+      }
+    >
+      <Router>
+        <Routes>
+          <Route element={<PublicRoute />}>
+            <Route exact path="/login" element={<LoginPage />} />
+          </Route>
+          <Route element={<PrivateRoute />}>
+            <Route exact path="/" element={<MainLayout />} />
 
-export default App
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </Router>
+    </Suspense>
+  );
+}

@@ -1,0 +1,41 @@
+$primary-color: #0B1F41;
+$secondary-color: #1542b7;
+$table-header: #234292;
+
+.admin-layout {
+  .sidebar-container {
+    background-color: $primary-color;
+  }
+
+  .cloud-download-icon {
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .sidebar-parent-item {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .child {
+    background-color: $secondary-color;
+
+    .list {
+      &:hover {
+        background-color: $primary-color;
+      }
+
+      .sub-child {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .table-header {
+    background-color: $table-header;
+  }
+}
