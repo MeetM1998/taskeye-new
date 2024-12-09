@@ -27,7 +27,7 @@ const Sidebar = () => {
         <SidebarDropDown />
 
         <div
-          className={`cloud-download-icon cursor-pointer mt-4  w-full flex justify-center py-4`}
+          className={`cloud-download-icon cursor-pointer mt-4 w-full flex justify-center py-4`}
         >
           <Tooltip
             title="Cloud Download"

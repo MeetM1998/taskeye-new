@@ -9,7 +9,7 @@ const TesterLayout = ({  data }) => {
       <div className="flex-1 p-[10px] bg-title-color overflow-y-auto">
         <div className="w-full bg-[#F5F5F5] shadow-lg flex flex-col h-full">
           <Outlet />
-          {/* <ContentRendererPage data={data} /> */}
+          <ContentRendererPage data={data} />
         </div>
       </div>
     </div>

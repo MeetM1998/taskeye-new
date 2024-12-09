@@ -14,7 +14,7 @@ export default function App() {
 
   const LoginPage = React.lazy(() => import("./components/Login"));
   const NotFoundPage = React.lazy(() => import("./components/Notfound"));
-  const MainLayout = React.lazy(() => import("./layout/MainStructure"));
+  const MainLayout = React.lazy(() => import("./Page/MainStructure"));
 
   const isLogin = () => {
     return isAuthenticate

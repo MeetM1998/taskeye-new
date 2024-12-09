@@ -7,13 +7,13 @@ import {
   RightOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
-import SidebarMenu from "../../../utility/MenuItemsData.json";
-import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import {
-  setTitle,
   setScreenId,
+  setTitle,
 } from "../../../redux/slice/titleScreen/titleScreenSlice";
+import SidebarMenu from "../../../utility/MenuItemsData.json";
 
 const iconComponents = {
   DashboardIcon: <DashboardOutlined />,
@@ -25,8 +25,8 @@ const iconComponents = {
 
 const SidebarDropDown = () => {
   const dispatch = useDispatch();
-
   const [hoveredKeys, setHoveredKeys] = useState({});
+  const [activeKey, setActiveKey] = useState(null);
 
   const handleMouseEnter = (key) => {
     setHoveredKeys((prev) => ({ ...prev, [key]: true }));
@@ -36,12 +36,13 @@ const SidebarDropDown = () => {
     setHoveredKeys((prev) => ({ ...prev, [key]: false }));
   };
 
-  const handleChildClick = (label, screenId) => {
+  const handleChildClick = (label, screenId, parentKey) => {
     dispatch(setTitle(label));
     dispatch(setScreenId(screenId));
     localStorage.setItem("title", label);
     localStorage.setItem("screenId", screenId);
     window.dispatchEvent(new Event("storage"));
+    setActiveKey(parentKey);
     setHoveredKeys({});
   };
 
@@ -51,7 +52,8 @@ const SidebarDropDown = () => {
         <div key={index} className="relative z-10">
           <div
             className={`flex flex-col justify-center items-center p-3 cursor-pointer ${
-              hoveredKeys[item.key] && `sidebar-parent-item`
+              (hoveredKeys[item.key] || activeKey === item.key) &&
+              `sidebar-parent-item`
             }`}
             onMouseEnter={() => handleMouseEnter(item.key)}
             onMouseLeave={() => handleMouseLeave(item.key)}
@@ -61,8 +63,6 @@ const SidebarDropDown = () => {
             </span>
             <span className="text-xs">{item.label}</span>
           </div>
-
-          {/* {console.log("item", item.screen_id)} */}
           {/* Child Dropdown */}
           {item.children && hoveredKeys[item.key] && (
             <div
@@ -81,7 +81,11 @@ const SidebarDropDown = () => {
                     // to={`${item.path}/${child.path}`}
                     className={`block px-4 py-2 flex-grow truncate`}
                     onClick={() =>
-                      handleChildClick(child.label, child.screen_id)
+                      handleChildClick(
+                        child?.label,
+                        child?.screen_id,
+                        item?.key
+                      )
                     }
                   >
                     <span className="text-white text-xs">{child.label}</span>
@@ -91,7 +95,7 @@ const SidebarDropDown = () => {
                     <RightOutlined className="text-white mr-1 cursor-pointer text-xs" />
                   )}
 
-                  {/* {console.log("child", child.screen_id)} */}
+                  {/* Sub-Child Dropdown */}
                   {hoveredKeys[child.key] && child.children && (
                     <div
                       key={child.key}
@@ -109,7 +113,8 @@ const SidebarDropDown = () => {
                             onClick={() =>
                               handleChildClick(
                                 subChild.label,
-                                subChild.screen_id
+                                subChild.screen_id,
+                                item?.key
                               )
                             }
                           >

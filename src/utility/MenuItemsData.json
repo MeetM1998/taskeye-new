@@ -176,8 +176,9 @@
 
   "screen_data": {
     "3-1": {
+      "iscustomise": false,
+      "title": "Monthly Report",
       "overview": {
-        "title": "Monthly Report",
         "overview_data": [
           [
             {
@@ -191,7 +192,7 @@
               "img_url": null
             },
             {
-              "Key": "department",
+              "key": "department",
               "value": "IT",
               "img_url": null
             },
@@ -211,6 +212,11 @@
               "key": "branch",
               "value": "Valsad",
               "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
             }
           ],
           [
@@ -222,6 +228,657 @@
             {
               "key": "branch",
               "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "HR",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio Technologies",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Valsad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "Finance",
+              "img_url": null
+            }
+          ],
+          [
+            {
+              "key": "company",
+              "value": "Uffizio IOTech",
+              "img_url": null
+            },
+            {
+              "key": "branch",
+              "value": "Ahemadabad",
+              "img_url": null
+            },
+            {
+              "key": "department",
+              "value": "IT",
+              "img_url": null
+            },
+            {
+              "key": "location",
+              "value": "Thaltej",
               "img_url": null
             }
           ]

@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import SessionExpiry from "../../common/SessionExpiry";
 import MenuData from "../../utility/MenuItemsData.json";
-import AdminLayout from "../AdminLayout";
-import TesterLayout from "../TesterLayout";
+import AdminLayout from "../../layout/AdminLayout";
+import TesterLayout from "../../layout/TesterLayout";
 
 const MainLayout = () => {
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.rootReducer.auth || {});
-  const {screenId} = useSelector(state => state.rootReducer.titleScreen);
+  const { screenId } = useSelector((state) => state.rootReducer.titleScreen);
 
   const [localScreenId, setLocalScreenId] = useState("");
 
@@ -37,8 +37,6 @@ const MainLayout = () => {
     ? MenuData.screen_data[screenId]
     : MenuData.screen_data[localScreenId];
 
-    console.log("contentData", contentData)
-
   const role = user ? user.role : localStorage.getItem("role");
 
   switch (role) {
@@ -47,7 +45,7 @@ const MainLayout = () => {
     case "tester":
       return <TesterLayout data={contentData} />;
     default:
-      return ;
+      return;
   }
 };
 
