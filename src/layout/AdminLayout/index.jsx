@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import ContentRendererPage from "../../Page/ContentRenderPage";
+import ContentRendererPage from "../../page/ContentRenderPage";
 import Sidebar from "../../components/Sidebar";
 
 const AdminLayout = ({ data }) => {

@@ -23,21 +23,22 @@ const Sidebar = () => {
           <BellOutlined style={{ fontSize: "24px" }} />
         </Tooltip>
       </div>
-      <div className="flex flex-col justify-between items-center h-full w-full">
-        <SidebarDropDown />
 
-        <div
-          className={`cloud-download-icon cursor-pointer mt-4 w-full flex justify-center py-4`}
+      <div className="flex-auto">
+        <SidebarDropDown />
+      </div>
+
+      <div
+        className={`cloud-download-icon cursor-pointer mt-4 w-full flex justify-center py-4`}
+      >
+        <Tooltip
+          title="Cloud Download"
+          placement="right"
+          arrow={false}
+          overlayInnerStyle={{ backgroundColor: "white", color: "black" }}
         >
-          <Tooltip
-            title="Cloud Download"
-            placement="right"
-            arrow={false}
-            overlayInnerStyle={{ backgroundColor: "white", color: "black" }}
-          >
-            <CloudDownloadOutlined className="text-4xl" />
-          </Tooltip>
-        </div>
+          <CloudDownloadOutlined className="text-4xl" />
+        </Tooltip>
       </div>
     </div>
   );

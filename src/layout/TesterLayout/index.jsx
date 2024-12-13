@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
-import ContentRendererPage from "../../Page/ContentRenderPage";
+import ContentRendererPage from "../../page/ContentRenderPage";
 
 const TesterLayout = ({  data }) => {
   return (

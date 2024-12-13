@@ -1,4 +1,4 @@
-$primary-color: #0B1F41;
+$primary-color: #0b1f41;
 $secondary-color: #1542b7;
 $table-header: #234292;
 
@@ -37,5 +37,9 @@ $table-header: #234292;
 
   .table-header {
     background-color: $table-header;
+  }
+
+  .custom-datepicker input {
+    font-size: 12px !important;
   }
 }
